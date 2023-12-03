@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+    <form action="/submit" method="post">
+        <label for="username" >ФИО заказчика: </label>
+        <input
+        type="text"
+        id = "username" 
+        name="usernare"
+        placeholder="Введите ваше имя"
+        required 
+        autofocus 
+        autocomplete="username" 
+        pattern="[A-Za-z]+"
+        title="Только буквы допустимы"
+        maxlength="50" 
+        minlength="3"
+        size="20"
+    >
+    <br>
+    <label for="password" >Колличество туристов: </label>
+    <input
+      type="number"
+      id = "number" 
+      name="number"
+      required 
+      autocomplete="password" 
+      pattern="[a-ZA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\. [a-zA-Z]{2,}"
+      maxlength="3" 
+      minlength="1"
+      size="20"
+    >
+    <br>
+    <label for="password" >Телеофн: </label>
+    <input
+      type="tel"
+      id = "tel" 
+      name="tel"
+      required 
+      autocomplete="password" 
+      pattern="[a-ZA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\. [a-zA-Z]{2,}"
+      maxlength="3" 
+      minlength="1"
+      size="20"
+      >
+    <br>
+    <label for="password" >Email: </label>
+    <input
+      type="email"
+      id = "email" 
+      name="email"
+      placeholder="user@.com"
+      required 
+      autocomplete="email" 
+      pattern="[a-ZA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\. [a-zA-Z]{2,}"
+      title="Введите адрес"
+      size="30"
+      >
+    <br>
+    <input
+      type="submit"
+      value = "Отправить"  
+      >
+    <br>  
+    <label for="username" >Страна: </label>
+    <input
+       
+      type="radio"
+      value="Турция">
+      Турция<br>
+      <input
+      type="radio"
+      value=" Египет">
+      Египет<br>
+      <input
+      type="radio"
+      value=" АОЭ">
+      АОЭ<br>
+      <input
+      type="radio"
+      value="Сингапур">
+      Сингапур<br>
+      <input
+      type="radio"
+      value="Маврикий">
+      Маврикий<br>
+      <input
+      type="radio"
+      value="Мальдивы">
+      Мальдивы<br>
+    <br>  
+    <label for="username" >Колличество звёзд у отеля: </label>
+    <input
+     type="checkbox"
+      value="1">
+      3 звезды<br>
+     <input
+     type="checkbox"
+      value="1">
+      4 звезды<br>
+      <input
+     type="checkbox"
+      value="1">
+      5 звезд<br>
+    <br>  
+    <label for="username" >Линия моря: </label>
+    <select id="line" name="line">
+        <optgroup label="Береговая линия">
+            <option value="1">1 линия</option> 
+            <option value="2">2 линия</option> 
+            <option value="3">3 линия</option>     
+        </optgroup>
+    </select>
+    </main>
+</body>
+</html> 
