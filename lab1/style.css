@@ -98,7 +98,7 @@ main a {
 }
 
 /*Форма обратной связи*/
-form {
+div {
     text-align: center;
     max-width: 200px;
     margin: 0;
@@ -107,17 +107,17 @@ form {
     flex-direction: column;
 }
 
-main [type='submit'] {
+div [type='submit'] {
     margin: 10px;
     background-color: rgb(40, 42, 197);
     color: rgb(211, 133, 32);
     padding: 20px;
     align-self:flex-start;
 }
-main [type='number'],
-main [type='text'] ,
-main [type='tel'],
-main [type='email'] {
+div [type='number'],
+div [type='text'] ,
+div [type='tel'],
+div [type='email'] {
     text-align: center;
     margin: 10px;
     background-color: rgb(40, 42, 197);
@@ -125,8 +125,14 @@ main [type='email'] {
     padding: 20px;
     width: 200px;
 }
-main  [for="username"],
-main  [for="password"] {
+div  [for="username"],
+div  [for="password"],
+div  [for="radio"],
+div  [for="number"],
+div  [for="line"],
+div  [for="checkbox"],
+div  [for="tel"],
+div  [for="email"] {
     color:  rgb(40, 42, 197);
     padding: 30px;
     font-size: 20px ;
